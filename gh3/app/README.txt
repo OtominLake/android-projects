@@ -1,0 +1,1 @@
+This is an empty Android project to establish android-projects github repository. More projects to come.
