@@ -1,0 +1,1 @@
+My sample Android projects. Refer to specific projects for more details.
