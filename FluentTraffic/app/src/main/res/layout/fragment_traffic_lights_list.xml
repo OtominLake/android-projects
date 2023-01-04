@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_traffic_lights"
+        android:name="com.otominlake.fluenttraffic.TrafficLightsItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".TrafficLightsListFragment"
+        tools:listitem="@layout/fragment_traffic_lights_item">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/list_tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/purple_700"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+</LinearLayout>
