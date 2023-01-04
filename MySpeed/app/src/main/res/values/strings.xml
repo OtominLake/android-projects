@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">My Speed</string>
+    <string name="init_speed_text" translatable="false">00</string>
+    <string name="info_text">Debug data</string>
+    <string name="bt_locate_text">Locate me</string>
+    <string name="distance_text">Distance %s</string>
+    <string name="avg_speed_text">Average speed: %skm/h</string>
+    <string name="max_speed_text">Max speed: %skm/h</string>
+    <string name="bt_reset_text">Reset</string>
+    <string name="time_text">Time elapsed: %s</string>
+</resources>
