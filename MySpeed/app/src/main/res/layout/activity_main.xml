@@ -1,49 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="8dp"
     android:keepScreenOn="true"
     android:orientation="vertical"
+    android:stretchColumns="*"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/main_tv_speed"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="@string/init_speed_text"
         android:textAlignment="center"
-        android:textColor="@color/purple_500"
-        android:textSize="128sp" />
+        android:textColor="@color/black"
+        android:textSize="128sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/main_tv_distance"
         style="@style/minor_data"
-        android:text="@string/distance_text" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:fontFamily="@font/cairo"
+        android:text="@string/init_speed_text"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/main_tv_time"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_tv_speed" />
 
     <TextView
         android:id="@+id/main_tv_time"
         style="@style/minor_data"
-        android:text="@string/time_text" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_text"
+        app:layout_constraintBottom_toBottomOf="@+id/main_tv_distance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_tv_distance"
+        app:layout_constraintTop_toTopOf="@+id/main_tv_distance" />
 
     <TextView
         android:id="@+id/main_tv_avg_speed"
         style="@style/minor_data"
-        android:text="@string/avg_speed_text" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avg_speed_text"
+        app:layout_constraintEnd_toStartOf="@+id/main_tv_max_speed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_tv_distance" />
+
 
     <TextView
         android:id="@+id/main_tv_max_speed"
         style="@style/minor_data"
-        android:text="@string/max_speed_text" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_speed_text"
+        app:layout_constraintBottom_toBottomOf="@+id/main_tv_avg_speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_tv_avg_speed"
+        app:layout_constraintTop_toTopOf="@+id/main_tv_avg_speed" />
 
     <Button
         android:id="@+id/main_bt_reset"
         style="@style/minor_data"
-        android:text="@string/bt_reset_text" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:text="@string/bt_reset_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

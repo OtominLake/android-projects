@@ -226,7 +226,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateUI() {
         binding.mainTvSpeed.text = dfSpeed.format(speed)
-        binding.mainTvDistance.text = resources.getString(R.string.distance_text, convertDistance())
+        binding.mainTvDistance.text = convertDistance()
         binding.mainTvTime.text = resources.getString(R.string.time_text, convertTime())
         binding.mainTvMaxSpeed.text = resources.getString(R.string.max_speed_text, dfSpeed.format(maxSpeed))
         binding.mainTvAvgSpeed.text = resources.getString(R.string.avg_speed_text, dfSpeed.format(avgSpeed))

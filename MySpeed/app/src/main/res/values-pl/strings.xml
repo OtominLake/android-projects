@@ -2,7 +2,7 @@
 <resources>
     <string name="info_text">Dane debugowe</string>
     <string name="bt_locate_text">Znajdź mnie</string>
-    <string name="distance_text">Odległość %s</string>
+    <string name="distance_text">Odległość</string>
     <string name="avg_speed_text">Średnia prędkość: %skm/h</string>
     <string name="max_speed_text">Maksymalna prędkość: %skm/h</string>
     <string name="bt_reset_text">Reset</string>
