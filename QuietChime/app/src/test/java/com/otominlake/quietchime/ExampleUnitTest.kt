@@ -1,4 +1,4 @@
-package pl.genevo.quietchime
+package com.otominlake.quietchime
 
 import org.junit.Test
 
